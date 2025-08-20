@@ -16,13 +16,13 @@ docker-compose up --build
 
 Все действия проходят по одному url 
 
-Получить список задач curl http://127.0.0.1:8000/tasks/
+Получить список задач: curl http://127.0.0.1:8000/tasks/
 
 
-Получить задачу по айди curl http://127.0.0.1:8000/tasks/<uuid>/
+Получить задачу по айди: curl http://127.0.0.1:8000/tasks/<uuid>/
 
 
-Создать задачу curl -X POST http://127.0.0.1:8000/api/v1/tasks/ \
+Создать задачу: curl -X POST http://127.0.0.1:8000/api/v1/tasks/ \
   -H "Content-Type: application/json" \
   -d '{
         "title": "Тестовая задача",
@@ -31,7 +31,7 @@ docker-compose up --build
       }'
 
 
-Обновить задачу curl -X PUT http://127.0.0.1:8000/api/v1/tasks/<uuid>/ \
+Обновить задачу: curl -X PUT http://127.0.0.1:8000/api/v1/tasks/<uuid>/ \
   -H "Content-Type: application/json" \
   -d '{
         "title": "Обновлённая задача",
@@ -40,6 +40,6 @@ docker-compose up --build
       }'
 
 
-Удалить задачу curl -X DELETE http://127.0.0.1:8000/api/v1/tasks/<uuid>/
+Удалить задачу: curl -X DELETE http://127.0.0.1:8000/api/v1/tasks/<uuid>/
 
 
